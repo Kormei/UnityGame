@@ -8,13 +8,12 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 moveDirection;
     public float moveSpeed = 5f;
 
-    // Start is called before the first frame update
     void Start()
     {
         characterController = GetComponent<CharacterController>();
     }
 
-    // Update is called once per frame
+    // Correct the move direction and keep you on the ground
     void Update()
     {      
         moveDirection.Normalize();
@@ -22,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
         characterController.Move(moveDirection * moveSpeed * Time.deltaTime);
     }
+    // Using input determines moveDirection
     public void AddMoveInput(float forwardInput, float rightInput)
     {
         Vector3 forward = transform.forward;
