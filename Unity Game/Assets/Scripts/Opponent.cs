@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Opponent : MonoBehaviour
 {
     float speed = 1;
     [SerializeField]Ball ball;
     Vector3 targetPosition;
+    public Transform oppTarget;
     void Start()
     {
         targetPosition = transform.position;
@@ -23,7 +25,7 @@ public class Opponent : MonoBehaviour
     {
         if(other.CompareTag("Ball"))
         {
-            ball.BallHit(transform.position, .3f);
+            ball.BallHit(transform.position, oppTarget.position, .3f);
         }
     }
 }
