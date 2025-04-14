@@ -6,9 +6,11 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 {
     PlayerSpells playerSpells;
+    PlayerMovement playerMovement;
     void Start()
     {
         playerSpells = GetComponent<PlayerSpells>();
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
     void Update()
@@ -22,6 +24,7 @@ public class PlayerInput : MonoBehaviour
         // Get the wasd input and send use it in AddMoveInput
         float forwardInput = Input.GetAxis("Vertical");
         float rightInput = Input.GetAxis("Horizontal");
+        playerMovement.AddMoveInput(forwardInput, rightInput);
     }
     void HandleSpells()
     {
