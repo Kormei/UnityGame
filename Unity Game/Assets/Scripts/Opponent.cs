@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 
 public class Opponent : MonoBehaviour
 {
-    float speed = 1;
+    float speed = 2;
     [SerializeField]Ball ball;
     Vector3 targetPosition;
     public Transform oppTarget;
@@ -25,7 +25,7 @@ public class Opponent : MonoBehaviour
     {
         if(other.CompareTag("Ball"))
         {
-            ball.BallHit(transform.position, oppTarget.position, .3f);
+            ball.BallHit(oppTarget.position, .3f);
         }
     }
 }

@@ -9,11 +9,11 @@ public class Ball : MonoBehaviour
         rigidbod = GetComponent<Rigidbody>();
     }
     // Impulse ball towards the center of the table considering player position
-    public void BallHit(Vector3 directionFrom, Vector3 target, float strength)
+    public void BallHit(Vector3 target, float strength)
     {
-        Vector3 direction = (target - transform.position + (transform.position - directionFrom)/2).normalized;
-        direction.y = 0;
-        rigidbod.velocity = new Vector3(0, 0, 0);
+        Vector3 direction = (target - transform.position).normalized;
+        direction.y = .375f;
+        rigidbod.velocity = Vector3.zero;
         rigidbod.AddForce(direction * strength, ForceMode.Impulse);
     }
 }

@@ -9,7 +9,7 @@ public class PlayerSpells : MonoBehaviour
     public Transform playTarget;
     public void TestSpell()
     {
-        ball.BallHit(transform.position, playTarget.position, .3f);
+        ball.BallHit(playTarget.position, .3f);
     }
     public void SpellOne()
     {
