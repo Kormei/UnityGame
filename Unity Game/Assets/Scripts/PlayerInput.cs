@@ -30,5 +30,7 @@ public class PlayerInput : MonoBehaviour
     {
         // If a certain key is pressed, Cast a certain 'spell'
         if(Input.GetKeyDown(KeyCode.F)){playerSpells.TestSpell();}
+        if(Input.GetKeyDown(KeyCode.Mouse0)){playerSpells.TestSpell();}
+
     }
 }

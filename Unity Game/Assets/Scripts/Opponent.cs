@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 public class Opponent : MonoBehaviour
 {
     float speed = 1;
-    [SerializeField]Ball ball;
+    [SerializeField] Ball ball;
     Vector3 targetPosition;
     public Transform oppTarget;
     void Start()
