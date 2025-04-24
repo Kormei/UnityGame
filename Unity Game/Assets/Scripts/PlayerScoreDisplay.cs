@@ -11,8 +11,12 @@ public class PlayerScoreDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        score = GetComponent<Score>();
         playerScore = GetComponent<Text>();
+        
+         if (!score)
+        {
+            score = GetComponent<Score>();
+        }
     }
 
     // Update is called once per frame

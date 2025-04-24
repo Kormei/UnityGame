@@ -7,6 +7,7 @@ public class PlayerInput : MonoBehaviour
 {
     PlayerSpells playerSpells;
     PlayerMovement playerMovement;
+
     void Start()
     {
         playerSpells = GetComponent<PlayerSpells>();
@@ -26,11 +27,19 @@ public class PlayerInput : MonoBehaviour
         float rightInput = Input.GetAxis("Horizontal");
         playerMovement.AddMoveInput(forwardInput, rightInput);
     }
+    
     void HandleSpells()
     {
         // If a certain key is pressed, Cast a certain 'spell'
-        if(Input.GetKeyDown(KeyCode.F)){playerSpells.TestSpell();}
-        if(Input.GetKeyDown(KeyCode.Mouse0)){playerSpells.TestSpell();}
 
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            playerSpells.TestSpell();
+        }
+
+        if(Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            playerSpells.TestSpell();
+        }
     }
 }
