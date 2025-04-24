@@ -8,32 +8,34 @@ public class Serve : MonoBehaviour
     [SerializeField]Score score;
     [SerializeField]PlayerMovement player;
     [SerializeField]Opponent opponent;
-    Vector3 PServeStart = new Vector3(.8f,2.2f,-6.4f);
-    Vector3 OServeStart = new Vector3(0f,1.5f,-.2f);
-    Vector3 PStart = FindFirstObjectByType<PlayerMovement>().transform.position;
-    Vector3 OStart = FindFirstObjectByType<Opponent>().transform.position;
-    // Start is called before the first frame update
+    Vector3 PServeStart = new Vector3(1f,1.5f,-7.4f);
+    Vector3 OServeStart = new Vector3(-1.3f,1.5f,-.2f);
+    Vector3 PStart;
+    Vector3 OStart;
+
     void Start()
     {
-        ball.transform.position = PServeStart;
-        player.transform.position = PStart;
-        opponent.transform.position = OStart;
+        PStart = player.transform.position;
+        OStart = opponent.transform.position;
         ball.GetComponent<Rigidbody>().useGravity = false;
-    }
 
-    // Update is called once per frame
-    void Update()
+    }
+    public void NextServe()
     {
         if((score.playerScoreNum + score.opponentScoreNum)%2 == 0){isPlayServe = true;}else{isPlayServe=false;}
         isOppServe = !isPlayServe;
         if(isPlayServe){PlayerServe();}else{OpponentServe();}
+        player.transform.position = PStart;
+        opponent.transform.position = OStart;
+        ball.GetComponent<Rigidbody>().useGravity = false;
+        ball.transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
     }
     void PlayerServe()
     {
-
+        ball.transform.position = PServeStart;
     }
     void OpponentServe()
     {
-
+        ball.transform.position = OServeStart;
     }
 }

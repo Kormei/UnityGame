@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class OpponentScoreText : MonoBehaviour
 {
-    public Score score; // Assign this in the Inspector if it's on a different GameObject
+    [SerializeField]Score score; // Assign this in the Inspector if it's on a different GameObject
     private Text opponentScore;
 
     // Start is called before the first frame update
@@ -16,7 +16,6 @@ public class OpponentScoreText : MonoBehaviour
         // Optional safety check
         if (score == null)
         {
-            Debug.LogWarning("Score reference not set on OpponentScoreText. Attempting to find it on the same GameObject.");
             score = GetComponent<Score>();
         }
     }

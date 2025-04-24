@@ -15,5 +15,6 @@ public class Ball : MonoBehaviour
         direction.y = .375f;
         rigidbod.velocity = Vector3.zero;
         rigidbod.AddForce(direction * strength, ForceMode.Impulse);
+        rigidbod.useGravity = true;
     }
 }

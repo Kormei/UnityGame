@@ -7,6 +7,7 @@ public class Score : MonoBehaviour
 {
     public int playerScoreNum = 0;
     public int opponentScoreNum = 0;
+    [SerializeField]public Serve serv;
 
     // Changes score based on collision with respective boundary
     void OnTriggerEnter (Collider other)
@@ -14,9 +15,11 @@ public class Score : MonoBehaviour
         if (other.CompareTag("OpponentBoundary"))
         {
             playerScoreNum++;
+            serv.NextServe();
         }
         else if (other.CompareTag("PlayerBoundary")) {
             opponentScoreNum++;
+            serv.NextServe();
         }
     }
 }

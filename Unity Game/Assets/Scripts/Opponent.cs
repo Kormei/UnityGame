@@ -25,7 +25,7 @@ public class Opponent : MonoBehaviour
     {
         if(other.CompareTag("Ball"))
         {
-            ball.BallHit(transform.position, oppTarget.position, .3f);
+            ball.BallHit(transform.position, oppTarget.position, .35f);
         }
     }
 }

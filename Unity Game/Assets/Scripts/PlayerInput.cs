@@ -7,6 +7,7 @@ public class PlayerInput : MonoBehaviour
 {
     PlayerSpells playerSpells;
     PlayerMovement playerMovement;
+    bool inHitReach = false;
     void Start()
     {
         playerSpells = GetComponent<PlayerSpells>();
@@ -29,8 +30,22 @@ public class PlayerInput : MonoBehaviour
     void HandleSpells()
     {
         // If a certain key is pressed, Cast a certain 'spell'
-        if(Input.GetKeyDown(KeyCode.F)){playerSpells.TestSpell();}
-        if(Input.GetKeyDown(KeyCode.Mouse0)){playerSpells.TestSpell();}
+        if(Input.GetKeyDown(KeyCode.F) && inHitReach){playerSpells.TestSpell();}
+        if(Input.GetKeyDown(KeyCode.Mouse0) && inHitReach){playerSpells.TestSpell();}
 
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Ball"))
+        {
+            inHitReach = true;
+        }
+    }
+    void OnTriggerExit(Collider other)
+    {
+        if(other.CompareTag("Ball"))
+        {
+            inHitReach = false;
+        }
     }
 }
