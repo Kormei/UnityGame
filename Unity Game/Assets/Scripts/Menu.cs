@@ -25,4 +25,8 @@ public class Menu : MonoBehaviour
         settings.gameObject.SetActive(false);
         menu.gameObject.SetActive(true);
     }
+    public void OnPlayAgain()
+    {
+        SceneManager.LoadScene("TitleScreen");
+    }
 }
