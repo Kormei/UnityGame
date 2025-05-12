@@ -4983,6 +4983,7 @@ MonoBehaviour:
   opponentScoreNum: 0
   serv: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   ptext: {fileID: 1403995004}
   otext: {fileID: 31109154}
   pboundary: {fileID: 924698418}
@@ -5013,12 +5014,17 @@ MonoBehaviour:
   runicSource: {fileID: 1402888360}
   darkSource: {fileID: 1855853142}
 =======
+=======
+>>>>>>> Stashed changes
   ptext: {fileID: 0}
   otext: {fileID: 0}
   pboundary: {fileID: 0}
   oboundary: {fileID: 0}
   WinButton: {fileID: 0}
   LoseButton: {fileID: 0}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
