@@ -954,9 +954,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1146775116}
   lines:
-  - And so, after defeating [BBEG] in a match of Wizard Ping Pong, Jimmy had earned
-    the title of Grand Wizard and went down as the greatest Wizard Ping Pong player
-    in history.
+  - And so, after defeating Eevil Wizardguy in a match of Wizard Ping Pong, Jimmy
+    had earned the title of Grand Mage and went down as the greatest Wizard Ping
+    Pong player in history.
   textSpeed: 0.1
   menu: {fileID: 1760918601}
   PAgainButton: {fileID: 648183321}

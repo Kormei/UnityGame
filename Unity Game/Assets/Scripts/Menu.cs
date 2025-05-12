@@ -9,7 +9,7 @@ public class Menu : MonoBehaviour
     public Canvas settings;
     public void OnStartButton()
     {
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("LevelOne");
     }
     public void OnQuitButton()
     {
