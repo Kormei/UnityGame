@@ -1909,6 +1909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad119bf313788f14c85e526d30dad881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
   ball: {fileID: 524376836}
   oppTarget: {fileID: 1881092694}
 --- !u!136 &868513150
@@ -3342,7 +3343,6 @@ GameObject:
   - component: {fileID: 1457516616}
   - component: {fileID: 1457516615}
   - component: {fileID: 1457516614}
-  - component: {fileID: 1457516621}
   - component: {fileID: 1457516622}
   m_Layer: 0
   m_Name: Player
@@ -3494,20 +3494,6 @@ Transform:
   - {fileID: 1935127562}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1457516621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1457516613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0d932fc7e64be243a595818d85189bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ball: {fileID: 524376836}
-  playTarget: {fileID: 514035324}
 --- !u!65 &1457516622
 BoxCollider:
   m_ObjectHideFlags: 0
