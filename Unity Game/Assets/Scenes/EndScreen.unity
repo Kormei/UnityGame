@@ -1022,7 +1022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1146775116}
   lines:
-  - And so, after defeating Eevil Wizardguy in a match of Wizard Ping Pong, Jimmy
+  - And so, after defeating Eevil Wizarguy in a match of Wizard Ping Pong, Jimmy
     had earned the title of Grand Mage and went down as the greatest Wizard Ping
     Pong player in history.
   textSpeed: 0.1
