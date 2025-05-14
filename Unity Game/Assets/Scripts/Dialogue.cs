@@ -12,6 +12,7 @@ public class Dialogue : MonoBehaviour
     private int index;
     public GameObject menu;
     public GameObject PAgainButton;
+    public GameObject self;
     // Start is called before the first frame update
     void Start()
     {
@@ -59,7 +60,7 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            self.SetActive(false);
             menu.SetActive(true);
             if(PAgainButton != null)
             {

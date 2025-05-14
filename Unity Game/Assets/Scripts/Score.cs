@@ -31,7 +31,7 @@ public class Score : MonoBehaviour
     }
     void GameOver()
     {
-        if(playerScoreNum == 7){ptext.SetActive(true);WinButton.SetActive(true);}else{otext.SetActive(true);LoseButton.SetActive(true);}
+        if(playerScoreNum >= 7){ptext.SetActive(true);WinButton.SetActive(true);}else{otext.SetActive(true);LoseButton.SetActive(true);}
         pboundary.SetActive(false);
         oboundary.SetActive(false);
     }

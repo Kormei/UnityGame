@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -321,8 +320,10 @@ MonoBehaviour:
     hit the ground on their opponent\u2019s side of the table."
   - "This is the journey of the greatest wizard to ever play the game. This is the
     tale\u2026 of Jimmy the Ping Pong Wizard. "
-  textSpeed: 0.1
+  textSpeed: 0.05
   menu: {fileID: 1437415111}
+  PAgainButton: {fileID: 0}
+  self: {fileID: 144703406}
 --- !u!1 &152299103
 GameObject:
   m_ObjectHideFlags: 0
