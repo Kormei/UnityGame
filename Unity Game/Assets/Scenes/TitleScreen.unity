@@ -212,11 +212,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9146097220080506859, guid: e56cc8fac42af354fb836743b4d925fb, type: 3}
-    - {fileID: 3062253089102689974, guid: e56cc8fac42af354fb836743b4d925fb, type: 3}
-    - {fileID: 2599633926948749191, guid: e56cc8fac42af354fb836743b4d925fb, type: 3}
+    - {fileID: 0}
     - {fileID: 6521563069842719486, guid: e56cc8fac42af354fb836743b4d925fb, type: 3}
     - {fileID: 9002370100343357804, guid: e56cc8fac42af354fb836743b4d925fb, type: 3}
     - {fileID: 6817167671908420538, guid: e56cc8fac42af354fb836743b4d925fb, type: 3}
+    - {fileID: 2599633926948749191, guid: e56cc8fac42af354fb836743b4d925fb, type: 3}
+    - {fileID: 3062253089102689974, guid: e56cc8fac42af354fb836743b4d925fb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -643,10 +644,36 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: we don't have settings lol
+  m_Text: 'we don''t have settings lol
+
+    here are the controls tho:
+
+    WASD
+    - Move character
+
+    F/Left Click - Hit ping pong ball
+
+    R - Cast Fire Spell:
+    Ball moves faster
+
+    T - Cast Ice Spell: Opponent moves slower
+
+    Y - Cast
+    Firework Spell: Looks flippin cool
+
+    U - Cast Soul Spell: Reduces opponent
+    score
+
+    I - Cast Electricity Spell: Looks flippin sick
+
+    O - Cast Runic
+    Spell: Increases player score
+
+    P - Cast Dark Spell: Ball loses all momentum,
+    player score large increase'
 --- !u!222 &772965681
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -691,7 +718,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -73}
+  m_AnchoredPosition: {x: 0, y: -180}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &849815725
@@ -1403,7 +1430,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Settings
+  m_Text: 'Settings (how to play)
 
 '
 --- !u!222 &1589952172
@@ -1940,7 +1967,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2021098285}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
